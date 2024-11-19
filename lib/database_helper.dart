@@ -30,13 +30,14 @@ class DatabaseHelper {
     await db.execute('''
       CREATE TABLE repair_requests (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        ownerName TEXT,
+        clientName TEXT,
         phoneNumber TEXT,
-        carModel TEXT,
-        issueDescription TEXT,
-        date TEXT,
-        time TEXT,
-        status TEXT DEFAULT 'в работе',
+        repair_type TEXT,
+        devise_model TEXT,
+        problem_description TEXT,
+        date_created TEXT,
+        status TEXT DEFAULT 'в работе', 
+        complection_date TEXT
         completionTime TEXT DEFAULT NULL,
         completionDate TEXT DEFAULT NULL
       )

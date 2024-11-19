@@ -16,15 +16,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Приложение',
       theme: ThemeData.dark().copyWith(
-        primaryColor: Colors.green,
+        primaryColor: const Color.fromARGB(255, 73, 76, 212),
         scaffoldBackgroundColor: Colors.black,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.green,
+          backgroundColor: Color.fromARGB(255, 73, 76, 212),
           foregroundColor: Colors.white, // Белый цвет текста заголовка AppBar
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green, // Зеленые кнопки
+            backgroundColor: Color.fromARGB(255, 73, 76, 212), // Зеленые кнопки
             foregroundColor: Colors.white, // Белый текст кнопок
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -34,8 +34,8 @@ class MyApp extends StatelessWidget {
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
           style: OutlinedButton.styleFrom(
-            foregroundColor: Colors.green, // Зеленая граница для кнопок
-            side: const BorderSide(color: Colors.green),
+            foregroundColor: Color.fromARGB(255, 73, 76, 212), // Зеленая граница для кнопок
+            side: const BorderSide(color: Color.fromARGB(255, 73, 76, 212)),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
         ),
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
-            foregroundColor: Colors.green,
+            foregroundColor: Color.fromARGB(255, 73, 76, 212),
           ),
         ),
         textTheme: const TextTheme(
@@ -60,21 +60,21 @@ class MyApp extends StatelessWidget {
             color: Colors.white70, // Белый с прозрачностью для второстепенного текста
           ),
         ),
-        iconTheme: const IconThemeData(color: Colors.green),
+        iconTheme: const IconThemeData(color: Color.fromARGB(255, 73, 76, 212)),
         inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(color: Colors.green),
+            borderSide: const BorderSide(color: Color.fromARGB(255, 73, 76, 212)),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(color: Colors.green),
+            borderSide: const BorderSide(color: Color.fromARGB(255, 73, 76, 212)),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: const BorderSide(color: Colors.green),
+            borderSide: const BorderSide(color: Color.fromARGB(255, 255, 255, 255)),
           ),
-          labelStyle: const TextStyle(color: Colors.green),
+          labelStyle: const TextStyle(color: Color.fromARGB(255, 73, 76, 212)),
         ),
       ),
       supportedLocales: const [
